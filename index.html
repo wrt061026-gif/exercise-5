@@ -1,1 +1,145 @@
-<h1>Hello World Wide Web!</h1>
+<!DOCTYPE html>
+<!--Ruitong Wu created at 10.21.2026-->
+<html lang="en-ca">
+  <head>
+    <title>Exercise 5: CSS Layout</title>
+    <meta charset="utf-8">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 18px;
+        line-height: 1.6;
+        font-family: Georgia, serif;
+        background-color: #D3BFDF;
+        color: #3F274A;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #6F3B86;
+        color: white;
+        padding: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        border: 1px solid #341541
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      .badge {
+        background-color: #F3C9DF;
+        color: #493050;
+        padding: 5px 15px;
+        font-size: 0.8em;
+        font-weight: bold;
+        border-radius: 10px;
+        width: max-content;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+      }
+
+      #main-content {
+        background-color: #FDFCFA;
+        color: #341541;
+        width: 65%;
+        display: inline-block;
+        padding: 25px;
+        vertical-align: top;
+        font-size: 16px;
+        border: 2px solid #341541;
+      }
+
+      #main-content h2 {
+        color: #654A86;
+        margin-top: 0;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #6F3B86;
+      }
+
+      #main-content p {
+        margin-bottom: 15px;
+      }
+
+      #sidebar {
+        background-color: #E1D6EF;
+        color: #382B4D;
+        width: 30%;
+        display: inline-block;
+        margin-left: 4%;
+        padding: 30px;
+        vertical-align: top;
+        font-size: 16px;
+      }
+
+      #sidebar h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+      }
+
+      #sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      #sidebar li {
+        padding: 8px 0;
+        border-bottom: 1px solid #B9A8CC;
+      }
+
+      footer {
+        background-color: #44345F;
+        color: white;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Design Blog</h1>
+      <div class="badge">Featured Post</div>
+    </header>
+
+    <div id="main-content">
+      <h2>Understanding CSS Layout</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Fusce id ullamcorper elit. Morbi sed nisl auctor, lobortis metus at, lacinia turpis. Fusce ornare commodo neque condimentum commodo. Aenean elementum tincidunt quam non pulvinar. Praesent enim sem, sagittis nec ex pretium, tempor tincidunt est. In hac habitasse platea dictumst. Maecenas et neque sit amet metus consequat mollis. Nunc non dolor scelerisque, scelerisque nunc nec, feugiat mi. Aliquam efficitur dictum lorem dictum faucibus.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque luctus magna in luctus. Nullam non cursus mi. In et orci tellus. Quisque eget rutrum dolor, pulvinar tincidunt massa. Maecenas sit amet libero eget ligula aliquet aliquam id ultrices mi. Pellentesque vel turpis sem. Aliquam varius accumsan fermentum. Maecenas quis metus elit. Sed nec dui odio. In hac habitasse platea dictumst. Ut venenatis ac nibh sollicitudin tempor. Aliquam mollis nibh a quam accumsan, sit amet vehicula ex pretium. Vivamus lobortis ac eros eu varius. Proin et lectus metus.</p>
+      <p>Phasellus rhoncus placerat viverra. Quisque interdum aliquet risus eu facilisis. Etiam vitae ipsum non tortor consectetur congue nec at mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean molestie lectus sit amet pellentesque volutpat. Maecenas nisi urna, iaculis id est sed, eleifend gravida nibh. Praesent fringilla nisl sed varius venenatis. Nam et cursus sapien, et molestie tortor. Praesent feugiat justo quam, non mollis ante malesuada vestibulum. Praesent cursus nunc neque, ut dignissim tortor mollis eu. Curabitur pretium lorem quis nibh volutpat aliquet. Phasellus ac dui non libero sagittis mollis. Fusce vel odio gravida, consequat lorem id, lobortis libero. Praesent id lacinia lectus.</p>
+    </div>
+
+    <div id="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li>Getting Started with CSS</li>
+        <li>HTML Fundamentals</li>
+        <li>Web Design Principles</li>
+        <li>Color Theory Basics</li>
+        <li>Typography on the Web</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 My Design Blog. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
